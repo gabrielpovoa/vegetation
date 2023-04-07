@@ -11,6 +11,7 @@ export const Container = styled.main`
     @media screen and (max-width: 768px){
         width: 100%;
         margin: 0;
+        box-shadow: none;
     }
 `;
 
@@ -46,9 +47,11 @@ export const Content = styled.div`
     gap: 2rem;
     padding: 2rem 5%;
     flex: 1;
-
+    max-width: 60rem;
+    
     @media screen and (max-width: 450px){
-        width: 80rem;
+        width: 60rem;
+        background: #f2f2f2;
         flex: 1%;
     }
 
@@ -67,8 +70,8 @@ export const Content = styled.div`
 
 export const Description = styled.p`
     font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
 `;
 
 export const Gallery = styled.div`

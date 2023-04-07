@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, ContainerBox, FotosArea } from './style';
+import { Container, ContainerBox, FotosArea, HeadinOne } from './style';
 
 type Props = {
     data: string[];
@@ -9,7 +9,7 @@ type Props = {
 export const GalleryView = ({ data, dataName }: Props) => {
     return <>
         <Container>
-        <h1>Fotos of {dataName}</h1>
+        <HeadinOne>Fotos of {dataName}</HeadinOne>
             <ContainerBox>
             {data.map((item, index) => (
                 <FotosArea key={index}>
