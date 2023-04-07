@@ -3,7 +3,7 @@ import styles from "./app.module.css"
 import { List } from "./components/List";
 import { Header } from "./components/header";
 
-const VegetationList = () => {
+const App = () => {
   return <>
     <div className={styles.contaianer}>
       <Header/>
@@ -12,4 +12,4 @@ const VegetationList = () => {
     </>;
 };
 
-export default VegetationList;
+export default App;

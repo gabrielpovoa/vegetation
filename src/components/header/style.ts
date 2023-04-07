@@ -15,6 +15,7 @@ export const Container = styled.div`
 export const Description = styled.div`
     display: flex;
     gap: .4rem;
+    border-bottom: .2rem solid #FFF;
 `; 
 
 export const Title = styled.h1`
