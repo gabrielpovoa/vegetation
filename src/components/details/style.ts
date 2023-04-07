@@ -16,7 +16,6 @@ export const Container = styled.main`
 
 export const Hero = styled.div`
     display: flex;
-
     @media screen and (max-width: 768px){
         flex-direction: column;
     }
@@ -33,7 +32,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-    width: 100%;
+    width: 60rem;
     pointer-events: none;
 `;
 
@@ -48,6 +47,10 @@ export const Content = styled.div`
     padding: 2rem 5%;
     flex: 1;
 
+    @media screen and (max-width: 450px){
+        width: 80rem;
+        flex: 1%;
+    }
 
     & a {
         width: 100%;
@@ -70,7 +73,6 @@ export const Description = styled.p`
 
 export const Gallery = styled.div`
     margin: 2rem auto;
-    width: 80%;
 
     @media screen and (max-width: 768px){
         width: 100%;

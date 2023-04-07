@@ -10,6 +10,12 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 550px){
+        position: initial;
+        height: 5rem;
+        width: 100%;
+    }
 `;
 
 export const Description = styled.div`

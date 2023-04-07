@@ -4,23 +4,23 @@ import { Container, ImageContainer, Image, Hero, Description, Content, Headingup
 import { GalleryView } from '../GalleryView'
 
 export const Details = () => {
-    const {id} = useParams()
-   const vegetation = brazilVegetation.biomes[Number(id)];
+    const { id } = useParams()
+    const vegetation = brazilVegetation.biomes[Number(id)];
     return <>
         <Container>
             <Hero>
-            <ImageContainer>
-                <Image src={vegetation.image} alt={vegetation.description} />
-            </ImageContainer>
-            <Content>
-            <Headingup>{vegetation.name}</Headingup>
-            <Description>{vegetation.description}</Description>
-            <Link to="/">Voltar</Link>
-            </Content>
+                <ImageContainer>
+                    <Image src={vegetation.image} alt={vegetation.description} />
+                </ImageContainer>
+                <Content>
+                    <Headingup>{vegetation.name}</Headingup>
+                    <Description>{vegetation.description}</Description>
+                    <Link to="/">Voltar</Link>
+                </Content>
             </Hero>
         </Container>
         <Gallery>
-            <GalleryView data={vegetation.gallery} dataName={vegetation.name}/>
+            <GalleryView data={vegetation.gallery} dataName={vegetation.name} />
         </Gallery>
     </>
 

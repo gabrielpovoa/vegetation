@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 5rem;
     padding: 2rem;
 
@@ -38,7 +38,7 @@ export const Listy = styled.li`
 
 export const ImageContainer = styled.div`
     height: 20rem;
-    `;
+`;
 
 export const Image = styled.img`
 border-radius: .5rem .5rem 0 0;

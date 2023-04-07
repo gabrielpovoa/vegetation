@@ -13,14 +13,14 @@ export const Container = styled.div`
 
 export const ContainerBox = styled.div`
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
 gap: 2rem;
 place-items: center;
 `;
 
 export const FotosArea = styled.div`
-    /* width: 60rem; */
     padding: 2rem 5%;
+    width:50rem;
     & img {
         border-radius: .5rem;
         width: 100%;
